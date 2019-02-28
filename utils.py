@@ -87,10 +87,7 @@ def load_training_data():
         enc = OneHotEncoder(categories='auto')
         fit = enc.fit(target)
         ohe = fit.transform(target).toarray()
-        print(img_batch.shape)
-        print(target_batch.shape)
-        print(img.shape)
-        print(target.shape)
+
     return img, target, ohe
 
 def load_test_data():
